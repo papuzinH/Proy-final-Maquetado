@@ -1,0 +1,454 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/************************************FIN RESET***************************************/
+
+/*COLOR NARANJA DE LA PALETA: #faaf52
+COLOR BLANCO DE LA PALETA: #fff
+COLOR GRIS DE PALETA (TEXTO): #777
+COLOR NEGRO DE PALETA: #111
+OTRO GRIS DE PALETA: #333
+GRIS FOOTER IZQ: #363840
+GRIS FOOTER DER: #26272e
+VIOLETA ETIQUETA PHOTO: #6165f4 
+ROSA ETIQUETA DESIGN: #fb406c
+CELESTE ETIQUETA TRAVEL: #00c8e3*/
+
+body{
+	font-family: Karla, sans-serif;
+	background-color: #fff;
+	font-size: 17px;
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	font-family: Oswald, sans-serif;
+	font-size: 28px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.text-links{
+	color: #faaf52;
+}
+
+.button{
+	padding: 16px 24px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: Oswald,sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.buttonselected, .button:hover{
+	background-color: #faaf52;
+	border-color: #faaf52;
+}
+
+.section{
+	padding: 128px 6%;
+	margin: 0 auto;
+}
+
+.section-header{
+	margin-top: 20px;
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.section-header h4{
+	font-size: 12px;
+	color: #bbb;
+	font-weight: 700;
+	margin-bottom: 22px;
+	letter-spacing: 1px;
+}
+
+.section-header h1{
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+}
+
+.flex-center-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-pie{
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.img-pie h3{
+	font-family: Oswald, sans-serif;
+	color: #111;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.img-pie p{
+	margin-top: 15px;
+	color: #777;
+	font-size: 0.8em;
+}
+
+.arrows{
+	background-color: #fff;
+	position: absolute;
+	display: flex;
+}
+
+.arrows div{
+	padding: 20px;
+	box-shadow: inset 0 -1px 0 0 #e7e7e7, inset -1px 0 0 0 #e7e7e7;
+}
+
+/*Estilos del header*/
+
+#header{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	padding: 12px;
+	background-color: #fff;
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	align-items: center;
+	z-index: 4;
+}
+#menu-ppal-logo img{
+	width: 48px;
+}
+#menu-ppal{
+	padding-left: 25px;
+}
+#menu-ppal ul{
+	display: flex;
+}
+#menu-ppal ul li a{
+	text-decoration: none;
+	color: #ABABAB;
+	padding: 12px 14px;
+}
+#menu-ppal ul li a:hover{
+	color: #111;
+}
+
+/*SLIDER STYLES*/
+
+#slider{
+	z-index: 0;
+}
+
+#slider-overlay{
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+#slider-img{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/1st\ slider.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+#slider-text{
+	position: absolute;
+	flex-direction: column;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 100px auto ;
+	max-width: 800px;
+	text-align: center;
+	z-index: 2;
+}
+
+#slider-text h6{
+	color: #faaf52;
+	font-family: Oswald,sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+#slider-text h1{
+	margin: 25px auto;
+	color: white;
+	font-size: 72px;
+	font-family: Oswald,sans-serif;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+#slider-text p{
+	color: #fff;
+	line-height: 30px;
+}
+
+#slider-buttons{
+	padding: 30px;
+}
+
+#slider-buttons a{
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+#slider-arrows{
+	bottom: 0px;
+	right: 0px;
+	z-index: 3;
+}
+
+#slider-location{
+	position: absolute;
+	color: #fff;
+	left: 40px;
+	bottom: 40px;
+	font-size: 12px;
+	z-index: 3;
+	line-height: 20px;
+}
+
+#slider-location img{
+	margin-right: 8px;
+	margin-top: 5px;
+}
+
+#slider-location div p:nth-child(2){
+	font-family: Oswald, sans-serif;
+	font-size: 16px;
+}
+
+/*Services styles*/
+
+#services{
+	flex-direction: column;
+	max-width: 1200px;
+}
+
+#services-articles article{
+	flex-direction: column;
+	text-align: center;
+	padding: 0 34px;
+}
+
+#services-articles article div{
+	padding: 20px;
+	margin-bottom: 32px;
+	border: solid 1px #bbb;
+}
+
+#services-articles article img{
+	width: 30px;
+}
+
+#services-articles article p{
+	font-size: 15px;
+	line-height: 24px;
+	color: #777;
+}
+
+#services-articles a{
+	margin-top: 24px;
+	font-family: Oswald, sans-serif;
+	text-decoration: underline;
+	color: #111;
+}
+
+#percentages {
+	width: 100%;
+	background-image: url(./img/fondonumberssection.jpg);
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Oswald, sans-serif;
+	color: white;
+}
+
+.overlay{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#percentages .overlay article{
+	width: 25%;
+	flex-direction: column;
+	padding: 90px 0;
+	border: 5% solid white;
+	box-shadow: 1px 0 0 0 hsla(0, 0%, 100%, 0.15);
+}
+
+#percentages .overlay article div{
+	border-radius: 50%;
+	border: 4px solid red;
+	width: 150px;
+	height: 150px;
+	font-size: 28px;
+	font-weight: 500;
+}
+
+#percentages .overlay article h3{
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+#portfolio-articles{
+	justify-content: space-evenly;
+}
+
+#portfolio article{
+	width: 30%;
+}
+
+#portfolio article a{
+	text-decoration: none;
+}
+
+#portfolio article a img{
+	width: 100%;
+}
+
+#home-contact{
+	background-image: url(/assets/img/work\ together\ fondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+#home-contact h1{
+	color: #fff;
+}
+
+#home-contact-text{
+	width: 50%;
+	margin: 0 auto;
+}
+
+#home-contact-text p{
+	margin-top: -80px;
+	margin-bottom: 40px;
+	line-height: 24px;
+	color: #bbb;
+	font-size: 0.9em;
+}
+
+#testimonials{
+	align-items: flex-start;
+	position: relative;
+}
+
+#testimonials-header h2{
+	font-size: 2em;
+	font-weight: 500;
+	padding-right: 150px;
+}
+
+#testimonials-arrows{
+	height: 50px;
+	bottom: 125px;
+}
+
+#testimonials-arrows div{
+	align-items: center;
+}
+
+#testimonials-img{
+	width: 5%;
+	border-radius: 50%;
+}
+
+#testimonials-slider{
+width: 40%;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+#testimonials-slider h3{
+	font-family: Oswald, sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+#testimonials-slider p{
+	color: #777;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+#testimonials-slider a{
+	text-decoration: underline;
+	font-family: Oswald;
+	color: #111;
+}
+
+#comillas{
+	margin-right: 150px;
+}
