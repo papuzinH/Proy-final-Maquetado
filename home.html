@@ -63,7 +63,7 @@
           <p>Bangkok, Thailand</p>
         </div>
       </div>
-      <div id="slider-arrows">
+      <div id="slider-arrows" class="arrows">
         <div>
           <img src="assets/img/flecha izq.svg" alt="flecha izquierda">
         </div>
@@ -141,74 +141,95 @@
       </div>
     </section>
 
-    <section id="about-me">
-      <div id="about me text">
-        <h1>Siplicity the key to success</h1>
+    <section id="about-me" class="section flex-center-container">
+      <div id="about-me-text" class="section-header flex-center-container">
+        <h1>Siplicity the a key to success</h1>
         <p>A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented
           ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic
           formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic,
           even the consumer’s mood when they see your ad.</p>
-        <img src="assets/img/firma.png" alt="mi firma">
+        <img id="firma" src="assets/img/firma.png" alt="mi firma">
       </div>
-      <div id="about me imgs">
-        <img src="assets/img/1st foto firma section.jpg" alt="primer fotografía">
-        <img src="assets/img/2nd fondo numbers section.jpg" alt="segunda fotografía">
+      <div id="about-me-imgs" class="flex-center-container">
+        <img id="about-me-fstimg" src="assets/img/1st foto firma section.jpg" alt="primer fotografía">
+        <img id="about-me-sndimg" src="assets/img/2nd fondo numbers section.jpg" alt="segunda fotografía">
       </div>
     </section>
 
-    <section id="portfolio">
-      <h4>Portfolio</h4>
-      <h1>Selected works</h1>
-      <article>
-        <a href="#">
-          <img src="assets/img/portrait app.jpg" alt="portrait app image">
-          <h3>Portrait app</h3>
-          <p>Mobile</p>
-        </a>
-      </article>
-      <article>
-        <a href="#">
-          <img src="assets/img/achitect hero.jpg" alt="architect hero image">
-          <h3>Architect Hero</h3>
-          <p>Website</p>
-        </a>
-      </article>
-      <article>
-        <a href="#">
-          <img src="assets/img/xfactor art.jpg" alt="xfactor art image">
-          <h3>Xfactor art</h3>
-          <p>Photography</p>
-        </a>
-      </article>
+    <section id="portfolio" class="section">
+      <div id="portfolio-header" class="section-header">
+        <h4>Portfolio</h4>
+        <h1>Selected works</h1>
+      </div>
+      <div id="portfolio-articles" class="flex-center-container">
+        <article>
+          <a href="#">
+            <img src="assets/img/portrait app.jpg" alt="portrait app image">
+            <div class="img-pie flex-center-container">
+              <h3>Portrait app</h3>
+              <p>Mobile</p>
+            </div>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="assets/img/achitect hero.jpg" alt="architect hero image">
+            <div class="img-pie flex-center-container">
+              <h3>Architect Hero</h3>
+              <p>Website</p>
+            </div>
+          </a>
+        </article>
+        <article>
+          <a href="#">
+            <img src="assets/img/xfactor art.jpg" alt="xfactor art image">
+            <div class="img-pie flex-center-container">
+              <h3>Xfactor art</h3>
+              <p>Photography</p>
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
 
-    <section id="home-contact">
-      <h4>Are you ready?</h4>
-      <h1>Let's work together</h1>
-      <p>Persona template comes with 6 different home layouts. Choose the one you like or mix components to create your
-        own unique website.</p>
-      <a href="contact.html">Contact me</a>
-    </section>
-
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <div id="testimonials-arrows">
-        <div>
-          <img src="assets/img/flecha izq.svg" alt="flecha izquierda">
+    <section id="home-contact" class="flex-center-container">
+      <div class="overlay">
+        <div class="section">
+          <div class="section-header">
+            <h4>Are you ready?</h4>
+            <h1>Let's work together</h1>
+          </div>
+          <div id="home-contact-text">
+            <p>Persona template comes with 6 different home layouts. Choose the one you like or mix components to create
+              your
+              own unique website.</p>
+            <a href="contact.html" class="button buttonselected">Contact me</a>
+          </div>
         </div>
-        <div>
-          <img src="assets/img/flecha der.svg" alt="flecha derecha">
+      </div>
+    </section>
+
+    <section id="testimonials" class="section flex-center-container">
+      <div id="testimonials-header">
+        <h2>Testimonials</h2>
+        <div id="testimonials-arrows" class="arrows">
+          <div class="flex-center-container">
+            <img src="assets/img/flecha izq.svg" alt="flecha izquierda">
+          </div>
+          <div class="flex-center-container">
+            <img src="assets/img/flecha der.svg" alt="flecha derecha">
+          </div>
         </div>
       </div>
+      <img id="testimonials-img" src="assets/img/lillian perkins.jpg" alt="lillian perkins">
       <div id="testimonials-slider">
-        <img src="assets/img/lillian perkins.jpg" alt="lillian perkins">
         <h3>Lillian Perkins</h3>
         <p>Yes, I was once a Jedi Knight the same as your father. I wish I'd known him. Our ships have completed their
           scan of the area and found nothing. If the Millennium Falcon went into light-speed, it'll be on the other side
           of the galaxy by now.</p>
         <a href="#">Elastic Themes</a>
-        <img src="assets/img/comillas icon.svg" alt="comillas">
       </div>
+      <img id="comillas" src="assets/img/comillas icon.svg" alt="comillas">
     </section>
 
     <section id="clients">

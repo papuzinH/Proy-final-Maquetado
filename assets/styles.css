@@ -81,6 +81,9 @@ h2{
 }
 
 .button{
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
 	padding: 16px 24px;
 	border: 1px solid #fff;
 	color: #fff;
@@ -98,11 +101,10 @@ h2{
 .section{
 	padding: 128px 6%;
 	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .section-header{
-	margin-top: 20px;
-	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -112,18 +114,57 @@ h2{
 	font-weight: 700;
 	margin-bottom: 22px;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 
 .section-header h1{
 	font-family: Oswald, sans-serif;
 	font-weight: 500;
 	font-size: 36px;
+	text-transform: uppercase;
+	line-height: 46px;
+}
+
+.section-header p{
+	color: #777;
+	font-size: 0.9em;
+	line-height: 24px;
 }
 
 .flex-center-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.img-pie{
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+
+.img-pie h3{
+	font-family: Oswald, sans-serif;
+	color: #111;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.img-pie p{
+	margin-top: 15px;
+	color: #777;
+	font-size: 0.8em;
+}
+
+.arrows{
+	background-color: #fff;
+	position: absolute;
+	display: flex;
+}
+
+.arrows div{
+	padding: 20px;
+	box-shadow: inset 0 -1px 0 0 #e7e7e7, inset -1px 0 0 0 #e7e7e7;
 }
 
 /*Estilos del header*/
@@ -264,7 +305,6 @@ h2{
 
 #services{
 	flex-direction: column;
-	max-width: 1200px;
 }
 
 #services-articles{
@@ -298,6 +338,8 @@ h2{
 	text-decoration: underline;
 	color: #111;
 }
+
+/* Estilos percentages */
 
 #percentages {
 	width: 100%;
@@ -336,4 +378,141 @@ h2{
 #percentages .overlay article h3{
 	text-transform: uppercase;
 	margin-top: 30px;
+}
+
+/* Estilos about me */
+
+#about-me-text{
+	width: 50%;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+#about-me-text p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#firma{
+	width: 50%;
+}
+
+#about-me-imgs{
+	width: 70%;
+	position: relative;
+}
+#about-me-imgs img{
+	width: 63%;
+}
+
+#about-me-fstimg{
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.15);
+}
+
+#about-me-sndimg{
+	position: absolute;
+	right: 20px;
+}
+
+
+#portfolio-articles{
+	justify-content: space-evenly;
+}
+
+#portfolio article{
+	width: 30%;
+}
+
+#portfolio article a{
+	text-decoration: none;
+}
+
+#portfolio article a img{
+	width: 100%;
+}
+
+#home-contact{
+	background-image: url(/assets/img/work\ together\ fondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+#home-contact h1{
+	color: #fff;
+}
+
+#home-contact-text{
+	width: 50%;
+	margin: 0 auto;
+}
+
+#home-contact-text p{
+	margin-top: 20px;
+	margin-bottom: 40px;
+	line-height: 24px;
+	color: #bbb;
+	font-size: 0.9em;
+}
+
+#testimonials{
+	align-items: flex-start;
+	position: relative;
+}
+
+#testimonials-header h2{
+	font-size: 2em;
+	font-weight: 500;
+	padding-right: 150px;
+}
+
+#testimonials-arrows{
+	height: 50px;
+	bottom: 125px;
+}
+
+#testimonials-arrows div{
+	align-items: center;
+}
+
+#testimonials-img{
+	width: 5%;
+	border-radius: 50%;
+}
+
+#testimonials-slider{
+width: 40%;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+#testimonials-slider h3{
+	font-family: Oswald, sans-serif;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+#testimonials-slider p{
+	color: #777;
+	line-height: 28px;
+	margin-bottom: 25px;
+}
+
+#testimonials-slider a{
+	text-decoration: underline;
+	font-family: Oswald;
+	color: #111;
+}
+
+#comillas{
+	margin-right: 150px;
 }
