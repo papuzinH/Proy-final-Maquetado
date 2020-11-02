@@ -420,9 +420,9 @@ h2{
 	right: 20px;
 }
 
-
 #portfolio-articles{
 	justify-content: space-evenly;
+	margin-top: 100px;
 }
 
 #portfolio article{
@@ -516,3 +516,37 @@ margin-right: 30px;
 #comillas{
 	margin-right: 150px;
 }
+
+/* Clients estilos */
+
+#clients{
+	background-image: url(/assets/img/myclientsfondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#clients div{
+	flex-direction: column;
+	color: #fff;
+}
+
+#clients div div{
+	width: 50%;
+}
+
+#clients div div h1{
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#clients-list{
+	margin-top: 80px;
+}
+
+#clients-list img{
+	width: 65%;
+}
+
