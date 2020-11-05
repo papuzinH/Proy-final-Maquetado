@@ -167,6 +167,16 @@ h2{
 	box-shadow: inset 0 -1px 0 0 #e7e7e7, inset -1px 0 0 0 #e7e7e7;
 }
 
+.etiqueta{
+	padding: 7px 10px;
+	background-color: red;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+}
+
 /*Estilos del header*/
 
 #header{
@@ -550,3 +560,60 @@ margin-right: 30px;
 	width: 65%;
 }
 
+/* posts estilos */
+#posts-header{
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+#posts-header a{
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-family: Oswald;
+	color: #111;
+}
+
+#posts-header h2{
+	font-size: 36px;
+}
+
+#posts article{
+	width: 50%;
+	border: solid 1px #ddd;
+	padding: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#posts article img{
+	width: 40%;
+}
+
+#post-text{
+	margin-left: 35px;
+}
+
+#post-text h3{
+	font-family: Oswald, sans-serif;
+	color: #111;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	margin-top: 25px;
+}
+
+#post-text p{
+	color: #777;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.read-more{
+	text-decoration: underline;
+	font-family: Oswald;
+	color: #111;
+}
