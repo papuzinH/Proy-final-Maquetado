@@ -2,7 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
+*{
+	box-sizing: border-box;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -99,7 +101,7 @@ h2{
 }
 
 .section{
-	padding: 128px 6%;
+	padding: 128px 0;
 	margin: 0 auto;
 	max-width: 1200px;
 }
@@ -160,11 +162,16 @@ h2{
 	background-color: #fff;
 	position: absolute;
 	display: flex;
+	cursor: pointer;
 }
 
 .arrows div{
 	padding: 20px;
 	box-shadow: inset 0 -1px 0 0 #e7e7e7, inset -1px 0 0 0 #e7e7e7;
+}
+
+.arrows div:hover{
+	background-color: #faaf52;
 }
 
 .etiqueta{
@@ -392,6 +399,11 @@ h2{
 
 /* Estilos about me */
 
+#about-me{
+	padding-bottom: 50px;
+	padding-top: 160px;
+}
+
 #about-me-text{
 	width: 50%;
 	flex-direction: column;
@@ -411,7 +423,7 @@ h2{
 }
 
 #about-me-imgs{
-	width: 70%;
+	width: 50%;
 	position: relative;
 }
 #about-me-imgs img{
@@ -554,10 +566,15 @@ margin-right: 30px;
 
 #clients-list{
 	margin-top: 80px;
+	justify-content: space-around;
+}
+
+#clients-list li{
+width: 13%;
 }
 
 #clients-list img{
-	width: 65%;
+	width: 100%;
 }
 
 /* posts estilos */
@@ -616,4 +633,129 @@ margin-right: 30px;
 	text-decoration: underline;
 	font-family: Oswald;
 	color: #111;
+}
+
+/* Footer styles */
+footer{
+	width: 100%;
+	justify-content: space-between !important;
+	align-items: stretch !important;
+}
+
+#footer-left{
+	width: 100%;
+	padding-left: 5%;
+	justify-content: space-between !important;
+	align-items: flex-start !important;
+	flex-direction: column;
+	background-color: #363840;
+}
+#footer-right{
+	width: 45%;
+	margin-bottom: 0px;
+	padding-top: 56px;
+	padding-right: 5%;
+	padding-left: 5%;
+	background-color: #26272e;
+}
+#footer-left-top{
+	width: 100%;
+	padding-top: 56px;
+	padding-bottom: 96px;
+	justify-content: flex-start !important;
+}
+#footer-left-top a{
+	display: inline-block;
+	width: 100%;
+	margin-right: 8%;
+	font-size: 13px;
+	text-decoration: none;
+}
+#footer-left-top a h3{
+	margin-bottom: 16px;
+	font-size: 15px;
+	font-family: Oswald, sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 20px;
+}
+#footer-left-top a p{
+	display: block;
+	color: #bbb;
+}
+
+#footer-left-bottom{
+	width: 100%;
+	justify-content: space-between !important;
+}
+
+#footer-text{
+	font-size: 11px;
+	line-height: 20px;
+	color: #bbb;
+	margin-bottom: 30px;
+}
+
+#footer-text p a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#footer-arrowup{
+	position: relative;
+	margin-right: 25%;
+	margin-bottom: -6px;
+	width: 64px;
+	height: 64px;
+	background-color: #26272e;
+}
+
+#footer-arrowup:hover{
+	background-color: #faaf52;
+	cursor: pointer;
+}
+
+#footer-right h2{
+	font-size: 22px;
+	color: #fff;
+	margin-bottom: 16px;
+}
+
+#footer-form{
+	width: 100%;
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#footer-form input{
+	padding: 12px 20px;
+}
+
+#email-form{
+	font-family: Oswald, sans-serif;
+	text-transform: uppercase;
+	font-size: 15px;
+	border: solid 2px #777;
+	background-color: transparent;
+	flex: 1;
+}
+
+#submit-form{
+	margin: 0;
+	width: 48px;
+	background-color: #faaf52;
+	border: none;
+	background-image: url(/assets/img/send\ icon.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#footer-right p{
+	margin-top: 15px;
+	font-size: 11px;
+	color: #777;
 }
