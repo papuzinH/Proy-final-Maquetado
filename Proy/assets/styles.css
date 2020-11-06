@@ -70,17 +70,9 @@ body{
 	padding: 0;
 }
 
-h1{
-	font-family: Oswald, sans-serif;
-	font-size: 44px;
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-bottom: 24px;
-}
-
 h2{
 	font-family: Oswald, sans-serif;
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: 500;
 	text-transform: uppercase;
 	margin-bottom: 16px;
@@ -147,18 +139,6 @@ h2{
 	align-items: center;
 }
 
-.portfolio-article{
-	width: 31%;
-}
-
-.portfolio-article a{
-	text-decoration: none;
-}
-
-.portfolio-article a img{
-	width: 100%;
-}
-
 .img-pie{
 	margin-top: 20px;
 	flex-direction: column;
@@ -176,21 +156,6 @@ h2{
 	margin-top: 15px;
 	color: #777;
 	font-size: 0.8em;
-}
-
-.link-item{
-	color: #111;
-	text-decoration: none;
-	font-family: Oswald, sans-serif;
-	box-shadow: 0 2px 0 0 #ddd;
-}
-
-.link-item:hover, .link-item-selected{
-	box-shadow: 0 2px 0 0 #111;
-}
-
-.mb-gallery{
-	margin-bottom: 50px;
 }
 
 .arrows{
@@ -219,15 +184,6 @@ h2{
 	font-size: 10px;
 }
 
-.overlay{
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-.no-bk{
-	background-image: none !important;
-}
-
 /*Estilos del header*/
 
 #header{
@@ -243,13 +199,7 @@ h2{
 	align-items: center;
 	z-index: 4;
 }
-
-#header h1{
-	margin-bottom: 0 !important;
-}
-
 #menu-ppal-logo img{
-	vertical-align: middle;
 	width: 48px;
 }
 #menu-ppal{
@@ -285,7 +235,7 @@ h2{
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background-image: url(img/1stslider.jpg);
+	background-image: url(/assets/img/1st\ slider.jpg);
 	background-size: cover;
 	background-position: center center;
 }
@@ -397,14 +347,16 @@ h2{
 
 #services-articles a{
 	margin-top: 24px;
-	padding-bottom: 5px;
+	font-family: Oswald, sans-serif;
+	text-decoration: underline;
+	color: #111;
 }
 
 /* Estilos percentages */
 
 #percentages {
 	width: 100%;
-	background-image: url(img/fondonumberssection.jpg);
+	background-image: url(./img/fondonumberssection.jpg);
 	background-position: center center;
 	background-attachment: fixed;
 	background-size: cover;
@@ -412,6 +364,10 @@ h2{
 	color: white;
 }
 
+.overlay{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -454,6 +410,7 @@ h2{
 }
 
 #about-me-text p{
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -481,21 +438,32 @@ h2{
 	right: 20px;
 }
 
-#portfolio-articles, #articles-gallery{
-	justify-content: space-between !important;
+#portfolio-articles{
+	justify-content: space-evenly;
 	margin-top: 100px;
-	flex-wrap: wrap;
+}
+
+#portfolio article{
+	width: 30%;
+}
+
+#portfolio article a{
+	text-decoration: none;
+}
+
+#portfolio article a img{
+	width: 100%;
 }
 
 #home-contact{
-	background-image: url(img/worktogetherfondo.jpg);
+	background-image: url(/assets/img/worktogetherfondo.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
 }
 
-#home-contact h2{
+#home-contact h1{
 	color: #fff;
 }
 
@@ -512,12 +480,14 @@ h2{
 	font-size: 0.9em;
 }
 
-#testimonials, #testimonials-section{
+#testimonials{
 	align-items: flex-start;
 	position: relative;
 }
 
 #testimonials-header h2{
+	font-size: 2em;
+	font-weight: 500;
 	padding-right: 150px;
 }
 
@@ -555,43 +525,20 @@ margin-right: 30px;
 	margin-bottom: 25px;
 }
 
+#testimonials-slider a{
+	text-decoration: underline;
+	font-family: Oswald;
+	color: #111;
+}
+
 #comillas{
 	margin-right: 150px;
 }
 
-.bk-testimonials{
-	background-image: url(img/testimonialsfondo.jpg);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#testimonials-section, #testimonials-section a{
-	color: #fff;
-}
-
-#testimonials-section p{
-	color:#ddd;
-}
-
-#testimonials-section #testimonials-header #testimonials-arrows{
-	background-color: transparent !important;
-	box-shadow: none !important;
-}
-
-#testimonials-section #testimonials-header #testimonials-arrows div{
-	border: solid 1px #fff;
-}
-
-#testimonials-section #testimonials-header #testimonials-arrows div:nth-child(2){
-	border-left-style: none;
-}
-
-
 /* Clients estilos */
 
 #clients{
-	background-image: url(img/myclientsfondo.jpg);
+	background-image: url(/assets/img/myclientsfondo.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -604,6 +551,13 @@ margin-right: 30px;
 
 #clients div div{
 	width: 50%;
+}
+
+#clients div div h1{
+	font-family: Oswald, sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	text-transform: uppercase;
 }
 
 #clients-list{
@@ -671,6 +625,11 @@ width: 13%;
 	margin-bottom: 20px;
 }
 
+.read-more{
+	text-decoration: underline;
+	font-family: Oswald;
+	color: #111;
+}
 
 /* Footer styles */
 footer{
@@ -785,7 +744,7 @@ footer{
 	width: 48px;
 	background-color: #faaf52;
 	border: none;
-	background-image: url(img/sendicon.svg);
+	background-image: url(/assets/img/sendicon.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -795,45 +754,4 @@ footer{
 	margin-top: 15px;
 	font-size: 11px;
 	color: #777;
-}
-
-
-/* WORKS */
-#works-header{
-	background-image: url(img/worktogetherfondo.jpg);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-	color: #fff;
-	padding-top: 72px;
-}
-
-#works-header div div{
-	padding-right: 650px;
-}
-
-#works-header div div p{
-	font-size: 15px;
-	line-height: 24px;
-}
-
-#articles-section{
-	padding-top: 0 !important;
-}
-
-#articles-header{
-	border-bottom: solid 1px #bbb;
-}
-
-#articles-filter{
-	display: flex;
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-#articles-filter li{
-	margin-right: 40px;
-}
-
-#articles-gallery{
-	padding-top: 0 !important;
 }
